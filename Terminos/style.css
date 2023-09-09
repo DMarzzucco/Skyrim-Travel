@@ -1,0 +1,359 @@
+:root{
+    --max-width:1280px;
+    --min-width:320px;
+    --acent-color:blue; 
+}
+*{box-sizing:border-box;}
+html,body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 12px;
+}
+/*conteiner*/
+.conteiner{
+    display:flex;
+    flex-direction: column;
+    min-width: var(--min-width);
+    /*agregar una imagen de fondo usando un background*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header .footer .contenedores {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+
+}
+/*header*/
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: gray;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+span{
+    font-size: 30px;
+}
+/*nav de menu de lista del index original*/
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-list1, .menu-list2{
+    display: inline-block;
+    border-radius: 30px;
+    border: 4px solid;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.menu-list1{
+    padding: 10px;
+    border: 1px solid black;
+    background-color: black;
+    text-align: center;
+    margin-right: 10px;
+}
+.menu-list2{
+    padding: 10px;
+    border: 1px solid white;
+    background-color: white;
+    text-align: center;
+}
+.menu-list2 a{
+    color: black;
+}
+/*navegacion del iniciado*/
+.menu-iniciado{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-iniciado .menu-iniciado-li{
+    display: inline-block;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+/*inicio*/
+.inicio{
+    width: 100%;
+    height: 95vh;
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+}
+.inicio h2{
+    padding: 50px 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.inicio p{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.inicio .invitacion{
+    text-align: center;
+}
+.inicio .invitacion h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.inicio .invitacion a{
+    padding:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: -1px solid brown;
+    border-radius: 50px;
+    background-color: rgba(140, 247, 238, 0.336);
+    color: rgb(21, 68, 87);
+}
+/*inicio de seccion*/
+.signin{
+    background: url(wallpaperflare.com_wallpaper.jpg);
+    height: 95vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signin .texto-sing{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.signin a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: -1px solid black;
+    border-radius: 23px;
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+}
+.signin .no-tenercuenta{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.signin .no-tenercuenta a{
+    font-size: 25px;
+    border: -1px solid rgba(0, 128, 0, 0.699);
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 14px;
+}
+/*registro*/
+.signup{
+    background: url(wallpaperflare.com_wallpaper.jpg);
+    height: 95vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signup .Entrada-registro h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.iniciar-secion, .registro{
+    text-align: center;
+}
+.registro{
+    display: flex;
+    flex-direction: column;
+}
+.input-field{
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 100%;
+}
+/*Bienvenido*/
+.Bienvendio{
+    background: url(wallpaperflare.com_wallpaper.jpg);
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+}
+.Bienvendio .contenido-bien h1{
+    padding: 60px 0 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+}
+.Bienvendio .contenido-bien p{
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.Bienvendio .regreso{
+    border: -1px solid rgba(18, 32, 90, 0.192);
+    border-radius: 20px;
+    padding: 20px;
+    width:300px;
+    background-color: rgba(18, 32, 90, 0.63);
+    margin: 0 auto;
+    text-align: center;
+}
+.Bienvendio .regreso p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Bienvendio .regreso a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border: -1px solid rgba(111, 117, 207, 0.411);
+    border-radius: 50px;
+    background-color: rgba(111, 117, 207, 0.363);
+    color:white;
+    padding: 6px;
+}
+/*pagina de iniciado*/
+.inicado{
+    background: url(wallpaperflare.com_wallpaper.jpg);
+    height: 100vh;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inicado a{
+    font-size: 23px;
+    border: -1px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(198, 223, 198);
+    color: black;
+}
+/*navegacion*/
+.navegacion{
+    padding: 50px 20px;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(42, 68, 48, 0.603), rgba(41, 100, 69, 0.5)), url(/Terminos/wallpaperflare.com_wallpaper.jpg);
+}
+.navegacion h2{
+    font-size: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navegacion .fila-navegacion{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.navegacion .fila-navegacion .nave{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(120px, 1fr));
+    grid-gap:20px;
+    grid-row-gap:20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.navegacion .fila-navegacion .nave:hover{
+    box-shadow: 0 0 27px #00000000;
+    scale:1.05;
+}
+.navegacion .fila-navegacion .nave p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.navegacion .fila-navegacion .nave img{
+    width: 250px;
+    height: 250px;
+    display: block;
+}
+/*actividades*/
+.actividades-head{
+    height: 100vh;
+    width: 100%;
+    padding: 20px 0;
+    align-items: center;
+    background-color: rgb(8, 122, 88);
+}
+.actividades-head h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+.actividades-head p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+/*alojamiento*/
+.alojamiento-head{
+    height: 100vh;
+    width: 100%;
+    padding: 0 20px;
+    background: #2a3a50;
+}
+.alojamiento-head h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.alojamiento-head p{
+    padding: 50px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+/*destino*/
+.destino-header{
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    background: #2a3a50;
+}
+.destino-header h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding:0 15px;
+    margin: auto;
+}
+.destino-header p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 20px 35px;
+    margin: auto;
+}
+/*gastronomia*/
+.gastronomia-header{
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    background: #2a3a50;
+}
+.gastronomia-header h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+.gastronomia-header p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+/*footer*/
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*media screem*/
