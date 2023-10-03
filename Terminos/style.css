@@ -34,7 +34,7 @@ html,body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: gray;
+    background-color: rgb(51, 51, 54);
     padding: 0 20px;
     position: sticky;
     top: 0;
@@ -91,7 +91,7 @@ span{
 .inicio{
     width: 100%;
     height: 95vh;
-    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    background-image:linear-gradient(#00000079, #3e3d4762), url(inicio.jpg);
 }
 .inicio h2{
     padding: 50px 0 20px;
@@ -122,7 +122,7 @@ span{
 }
 /*inicio de seccion*/
 .signin{
-    background: url(wallpaperflare.com_wallpaper.jpg);
+    background: linear-gradient(#000000a2, #00000000), url(iniciar\ seccion.jpg);
     height: 95vh;
     padding: 50px 20px;
     display: flex;
@@ -135,31 +135,67 @@ span{
     font-size: 25px;
     text-align: center;
 }
-.signin a{
+
+.inciarsecione{
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #000;
+    padding: 10px 10px ;
+}
+.inciarsecione input{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    background-color: #000;
+    margin: 12px;
+    color: gray;
+}
+.inciarsecione a{
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    border: -1px solid black;
-    border-radius: 23px;
-    background-color: aliceblue;
-    color: black;
+    border: 1px solid grey;
+    border-radius: 12px;
+    background-color: black;
+    color:grey;
     padding: 10px;
+
+}
+.inciarsecione .btn-iniciar{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    background-color: black;
+    color:grey;
+    padding: 10px;
+    margin: 50px;
 }
 .signin .no-tenercuenta{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-align: center;
+    border: -1px solid black;
+    border-radius: 10px;
+    background-color: #000;
+    padding: 20px 20px;
+    margin: 20px;
 }
 .signin .no-tenercuenta a{
-    font-size: 25px;
-    border: -1px solid rgba(0, 128, 0, 0.699);
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.568);
+    font-size: 15px;
     padding: 14px;
+    color: rgb(0, 119, 255);
+    text-decoration: underline;
 }
 /*registro*/
 .signup{
-    background: url(wallpaperflare.com_wallpaper.jpg);
-    height: 95vh;
+    background: linear-gradient( #0000006e, #000000a4), url(registro.jpg);
+    height: 100%;
     padding: 50px 20px;
     display: flex;
     flex-direction: column;
@@ -176,17 +212,27 @@ span{
 .registro{
     display: flex;
     flex-direction: column;
+    border: -1px solid black;
+    border-radius: 20px;
+    background-color: #00000091;
+    padding: 20px 20px;
 }
-.input-field{
-    margin: 10px 0;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    width: 100%;
+.registro input{
+    padding: 10px 10px;
+    width: 300px;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: #000000b7;
+    margin: 8px;
+    color: gray;
+}
+.registro .bt{
+    cursor: pointer;
 }
 /*Bienvenido*/
 .Bienvendio{
-    background: url(wallpaperflare.com_wallpaper.jpg);
+    background: url(registro.jpg);
     width: 100%;
     height: 95vh;
     text-align: center;
@@ -222,27 +268,411 @@ span{
     color:white;
     padding: 6px;
 }
-/*pagina de iniciado*/
-.inicado{
-    background: url(wallpaperflare.com_wallpaper.jpg);
+/*destino*/
+.destino-header{
+    width: 100%;
     height: 100vh;
+    padding: 0 20px;
+    background:url(/BIenvenido/preparativos/DEstino-inicio.jpg);
+}
+.destino-header h2{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
+    padding:20px 20px;
+    margin: auto;
+}
+.destino-header p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 20px 35px;
+    margin: auto;
+}
+.intro{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.intro a{
+    padding: 9px 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+    border: -1px solid black;
+    border-radius: 12px;
+    background: #88a7eb86;
+}
+.logos-escudos{
+    padding: 35px 20px;
+}
+.destino-header .logos-escudos .linea-de-logos{
+    display: flex;
+    flex-direction: row;
+}
+.linea-de-logos p{
+    text-align: center;
+}
+.linea-de-logos a{
+    text-align: center;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.inicado a{
-    font-size: 23px;
+.logos-escudos img{
+    width: 80px;
+    height: 80px;
+}
+.history-skyrim{
+    display: flex;
+    display: 50px 50px;
+    height: 200px;
+}
+.history-skyrim a{
+    text-align: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 10px 10px;
+}
+/*historia de skyrim*/
+.skyrim-history{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.skyrim-history h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 20px;
+}
+.contenido-skyrim{
+    width: 1200px;
+    display: flex;
+    margin: auto;
     border: -1px solid black;
-    padding: 10px;
-    border-radius: 50px;
-    background-color: rgb(198, 223, 198);
-    color: black;
+    border-radius: 17px;
+    background: linear-gradient(to top, #000,#00000000), url(/BIenvenido/preparativos/skyrim-map-history.jpg);
+}
+.contenido-skyrim p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 20px 20px;
+}
+.contenido-skyrim img{
+    width: 500px;
+    height: 300px;
+    
+}
+.skyrim-history h3{
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+}
+.history-s-fila{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 50px;
+}
+.history-s-fila a{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 9px 9px;
+    margin: 20px;
+}
+/*gastronomias*/
+/*mundos*/
+.mundos{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #111b27d5, #3a4f63c0), url(/BIenvenido/preparativos/mapa\ de\ skyrim\ vb\ destino.jpg);
+}
+.mundos h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding: 20px 20px;
+}
+.mundo-filas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 50px 50px 50px;
+}
+/*white-run*/
+.whiterun{
+    padding: 50px 50px 50px;
+    width: 1250px;
+    border: -1px solid #000;
+    border-radius: 40px;
+    margin: 20px;
+    background: linear-gradient(to top, #00000094, #ffffff69), url(/BIenvenido/preparativos/mundos/white\ run.jpg);
+}
+.whiterun a img{
+    width: 80px;
+    height: 80px;
+}
+.whiterun p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: left;
+}
+.nav-white{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-white a{
+    padding: 8px 8px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 13px;
+}
+/*riften*/
+.riften{
+    padding: 50px 50px 50px;
+    width: 1250px;
+    border: -1px solid #000;
+    border-radius: 40px;
+    margin: 20px;
+    background: linear-gradient(to top, #00000094, #ffffff69), url(/BIenvenido/preparativos/mundos/riften.jpg);
+}
+.riften img{
+    width: 60px;
+    height: 60px;
+}
+.riften p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: left;
+}
+.nav-riften{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-riften a{
+    padding: 8px 8px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 13px;
+}
+/*markarth*/
+.markarth{
+    padding: 50px 50px 50px;
+    width: 1250px;
+    border: -1px solid #000;
+    border-radius: 40px;
+    margin: 20px;
+    background: linear-gradient(to top, #00000094, #ffffff69), url(/BIenvenido/preparativos/mundos/markath.jpg);
+}
+.markarth a img{
+    width: 80px;
+    height: 80px;
+}
+.markarth p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: left;
+}
+.nav-markarth{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-markarth a{
+    padding: 8px 8px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 13px;
+}
+/*windhelm*/
+.windhelm{
+    padding: 50px 50px 50px;
+    width: 1250px;
+    border: -1px solid #000;
+    border-radius: 40px;
+    margin: 20px;
+    background: linear-gradient(to top, #00000094, #ffffff69), url(/BIenvenido/preparativos/mundos/windhelm.jpg);
+}
+.windhelm a img{
+    width: 80px;
+    height: 80px;
+}
+.windhelm p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: left;
+}
+.nav-windhelm{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-windhelm a{
+    padding: 8px 8px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 13px;
+}
+/*solitude*/
+.solitude{
+    padding: 50px 50px 50px;
+    width: 1250px;
+    border: -1px solid #000;
+    border-radius: 40px;
+    margin: 20px;
+    background: linear-gradient(to top, #00000094, #ffffff69), url(/BIenvenido/preparativos/mundos/solitude.jpg);
+}
+.solitude a img{
+    width: 80px;
+    height: 80px;
+}
+.solitude p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: left;
+}
+.nav-solitude{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-solitude a{
+    padding: 8px 8px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 13px;
+}
+/*dawnstar*/
+.dawnstar{
+    padding: 50px 50px 50px;
+    width: 1250px;
+    border: -1px solid #000;
+    border-radius: 40px;
+    margin: 20px;
+    background: linear-gradient(to top, #00000094, #ffffff69), url(/BIenvenido/preparativos/mundos/drawstar.jpg);
+}
+.dawnstar a img{
+    width: 80px;
+    height: 80px;
+}
+.dawnstar p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: left;
+}
+.nav-dawnstar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-dawnstar a{
+    padding: 8px 8px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 13px;
+}
+/*morthal*/
+.morthal{
+    padding: 50px 50px 50px;
+    width: 1250px;
+    border: -1px solid #000;
+    border-radius: 40px;
+    margin: 20px;
+    background: linear-gradient(to top, #00000094, #ffffff69), url(/BIenvenido/preparativos/mundos/morthal.jpg);
+}
+.morthal a img{
+    width: 80px;
+    height: 80px;
+}
+.morthal p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: left;
+}
+.nav-morthal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-morthal a{
+    padding: 8px 8px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 13px;
+}
+/*falkreath*/
+.falkreath{
+    padding: 50px 50px 50px;
+    width: 1250px;
+    border: -1px solid #000;
+    border-radius: 40px;
+    margin: 20px;
+    background: linear-gradient(to top, #00000094, #ffffff69), url(/BIenvenido/preparativos/mundos/falkreath.jpg);
+}
+.falkreath a img{
+    width: 80px;
+    height: 80px;
+}
+.falkreath p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: left;
+}
+.nav-falkreath{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-falkreath a{
+    padding: 8px 8px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 13px;
+}
+/*winterhol*/
+.winterhold{
+    padding: 50px 50px 50px;
+    width: 1250px;
+    border: -1px solid #000;
+    border-radius: 40px;
+    margin: 20px;
+    background: linear-gradient(to top, #00000094, #ffffff69), url(/BIenvenido/preparativos/mundos/winterhold.jpg);
+}
+.winterhold a img{
+    width: 80px;
+    height: 80px;
+}
+.winterhold p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: left;
+}
+.nav-winterhold{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-winterhold a{
+    padding: 8px 8px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 13px;
 }
 /*navegacion*/
 .navegacion{
     padding: 50px 20px;
     height: 100vh;
-    background: linear-gradient(to top, rgba(42, 68, 48, 0.603), rgba(41, 100, 69, 0.5)), url(/Terminos/wallpaperflare.com_wallpaper.jpg);
+    background: linear-gradient(to top, rgba(42, 68, 48, 0.603), rgba(41, 100, 69, 0.5)), url(/BIenvenido/categorias.jpg);
 }
 .navegacion h2{
     font-size: 25px;
@@ -278,82 +708,544 @@ span{
     height: 250px;
     display: block;
 }
-/*actividades*/
-.actividades-head{
-    height: 100vh;
-    width: 100%;
-    padding: 20px 0;
+/*navegacion de reino principal*/
+.blanco-n{
+    padding: 90px 20px;
+}
+.blanco-n .fila{
+    display: flex;
     align-items: center;
-    background-color: rgb(8, 122, 88);
+    margin: auto;
+    justify-content: space-between;
 }
-.actividades-head h2{
+.blanco-n .fila a{
+    padding: 9px 9px;
+    border: 1px solid white;
+    border-radius: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 50px;
+    color: rgb(247, 247, 244);
 }
-.actividades-head p{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 25px;
-}
-/*alojamiento*/
-.alojamiento-head{
-    height: 100vh;
+/*WHITE-RUN*/
+.white-h{
+    height: 100%;
     width: 100%;
-    padding: 0 20px;
-    background: #2a3a50;
+    align-items: center;
+    background:linear-gradient(to top, #00000094, #ffffff69) ,url(/BIenvenido/preparativos/mundos/white\ run.jpg);
 }
-.alojamiento-head h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    text-align: center;
-}
-.alojamiento-head p{
-    padding: 50px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    text-align: center;
-}
-/*destino*/
-.destino-header{
-    width: 100%;
-    height: 100vh;
-    padding: 0 20px;
-    background: #2a3a50;
-}
-.destino-header h2{
+.white-h h2{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    padding:0 15px;
+    font-size: 70px;
+    padding: 20px 40px;
+}
+.escudo-white{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
     margin: auto;
 }
-.destino-header p{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    padding: 20px 35px;
+.escudo-white img{
+    width: 193px;
+    height: 193px;
     margin: auto;
 }
-/*gastronomia*/
-.gastronomia-header{
-    width: 100%;
-    height: 100vh;
-    padding: 0 20px;
-    background: #2a3a50;
+.escudo-white p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.gastronomia-header h2{
+/*un pequeño recorrido*/
+.wr-litle-king{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to top, #373e4d94, #353f4d69), url(/BIenvenido/preparativos/mundos/recorrido/whiterun.jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.wr-litle-king h2{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
 }
-.gastronomia-header p{
-    text-align: center;
+.wr-litle-king h3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
+}
+.wr-litle-king a{
+    padding: 10px 10px;
+}
+.wr-litle-king .encuadreprincipal{
+    padding: 20px 30px;
+    margin: auto;
+    border: -1px solid black;
+    border-radius: 30px;
+    background:linear-gradient(to top, #00000094, #28294969),url(/BIenvenido/preparativos/mundos/recorrido/whiterun\ 2.jpg);
+    width: 100%;/*corregir esto*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wr-litle-king .encuadreprincipal h2{
+    text-align: left;
+    margin: auto;
+}
+.wr-litle-king .encuadreprincipal p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.wr-litle-king .encuadreprincipal .jarl{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.wr-litle-king .encuadreprincipal .jarl img{
+    width: 170px;
+    height: 170px;
+}
+.wr-litle-king .encuadreprincipal .jarl p{
+    text-align: right;
+    padding: 0 5px;
+}
+.wr-litle-king .encuadreprincipal .geografia-muestra img{
+    width: 350px;
+    height: 170px;
+}
+/*whiterun alojamiento*/
+.white-alojamiento-head{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background:linear-gradient(to top, #00000094, #3b414269) ,url(/BIenvenido/preparativos/mundos/alojamientos/Whiterun/whiterun\ entrada\ alojamiento-01.jpeg);
+}
+.white-alojamiento-head h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding: 20px 40px;
+}
+.white-alojamiento-escudo{
+    width: 500px;
+    border: -1px solid black;
+    border-radius: 20px;
+    background-color: rgba(55, 61, 85, 0.24);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 20px;
+}
+.white-alojamiento-escudo img{
+    width: 293px;
+    height: 293px;
+    margin: auto;
+}
+.white-alojamiento-escudo p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.filas-alojamiento{
+    padding: 10px, 10px;
+}
+.filas-alojamiento .nav-alojamiento{
+    padding: 20px 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.nav-alojamiento a{
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 9px 9px;
+}
+/*servicos*/
+.white-servicios{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#d3830c73, #000000b6), url(/BIenvenido/preparativos/mundos/alojamientos/Whiterun/whiterun\ servicios\ alojamiento-01.jpeg);
+    align-items: center;
+}
+.white-servicios h1{
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.white-servicios .lista-servicios{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.white-servicios .lista-servicios h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+.white-servicios img{
+    width: 560px;
+    height: 350px;
+}
+.white-servicios .lista-servicios p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.white-servicios .habitaciones{
+    padding: 20px 20px;
+    width: 100%;
+    height: 100%;
+}
+.white-servicios .comida{
+    padding: 20px 20px;
+    width: 100%;
+    height: 100%;
+}
+.servicios-comida{
+    padding: 20px 20px;
+    border: -1px solid black;
+    background-color: white;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+.servicios-comida span{
+    padding: 10px;
+}
+/*reserva*/
+.white-reservaciones{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000, #00000094), url(/BIenvenido/preparativos/mundos/alojamientos/Whiterun/whiterun\ servicios\ alojamiento-01.jpeg);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.white-reservaciones h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding: 20px 20px;
+}
+.formulario-reserva{
+    padding: 20px 20px;
+    border: -1px solid black;
+    border-radius: 40px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.formulario-reserva input{
+    width: 580px;
+    height: 58px;
+    border-radius: 20px;
+    background-color: #000;
+    border: #000;
+    color: grey;
+    margin: 9px;
+}
+.formulario-reserva label{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario-reserva a{
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid gray;
+    border-radius: 17px;
+    color: gray;
+}
+
+/*RIFTEN*/
+.riften-h{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background:linear-gradient(to top, #00000094, #ffffff69) ,url(/BIenvenido/preparativos/mundos/riften.jpg);
+}
+.riften-h h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding: 20px 40px;
+}
+.escudo-riften{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.escudo-riften img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.escudo-riften p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.r-litle-king{
+    width: 100%;
+    height: 95vh;
+    background-color: violet;
+}
+/*MARKARTH*/
+.markarth-h{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background:linear-gradient(to top, #00000094, #ffffff69) ,url(/BIenvenido/preparativos/mundos/markath.jpg);
+}
+.markarth-h h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding: 20px 40px;
+}
+.escudo-markarth{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.escudo-markarth img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.escudo-markarth p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*WINDHELM*/
+.windhelm-h{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background:linear-gradient(to top, #00000094, #ffffff69) ,url(/BIenvenido/preparativos/mundos/windhelm.jpg);
+}
+.windhelm-h h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding: 20px 40px;
+}
+.escudo-windhelm{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.escudo-windhelm img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.escudo-windhelm p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*SOLITUDE*/
+.solitude-h{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background:linear-gradient(to top, #00000094, #ffffff69) ,url(/BIenvenido/preparativos/mundos/solitude.jpg);
+}
+.solitude-h h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding: 20px 40px;
+}
+.escudo-solitude{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.escudo-solitude img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.escudo-solitude p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*DRAWSTAR*/
+.dawnstar-h{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background:linear-gradient(to top, #00000094, #ffffff69) ,url(/BIenvenido/preparativos/mundos/drawstar.jpg);
+}
+.dawnstar-h h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding: 20px 40px;
+}
+.escudo-dawnstar{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.escudo-dawnstar img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.escudo-dawnstar p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*MORTHAL*/
+.morthal-h{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background:linear-gradient(to top, #00000094, #ffffff69) ,url(/BIenvenido/preparativos/mundos/morthal.jpg);
+}
+.morthal-h h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding: 20px 40px;
+}
+.escudo-morthal{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.escudo-morthal img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.escudo-morthal p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*FARKEATH*/
+.falkreath-h{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background:linear-gradient(to top, #00000094, #ffffff69) ,url(/BIenvenido/preparativos/mundos/falkreath.jpg);
+}
+.falkreath-h h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding: 20px 40px;
+}
+.escudo-falkreath{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.escudo-falkreath img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.escudo-falkreath p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*WINTERHOLD*/
+.winterhold-h{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background:linear-gradient(to top, #00000094, #ffffff69) ,url(/BIenvenido/preparativos/mundos/winterhold.jpg);
+}
+.winterhold-h h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding: 20px 40px;
+}
+.escudo-winterhold{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.escudo-winterhold img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.escudo-winterhold p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Reservacion*/
+.Reservado{
+    width: 100%;
+    height: 95vh;
+    background-color: #000;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.Reservado h2{
+    padding: 20px 20px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Reservado p{
+    padding: 10px 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Reservado a{
+    padding: 9px 9px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 /*footer*/
 .footer{
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 20px;
 }
+.footer .contacto{  
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer .contacto a{
+    padding: 6px;
+    text-align: right;
+    font-size: 20px;
+    margin: 1px;
+}
+
 /*media screem*/
