@@ -85,16 +85,18 @@
           <section id="reservaciones" class="white-reservaciones">
             <h2>RESERVA TU LUGAR YAA!!</h2>
             <div class="formulario-reserva">
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="E-Mail">
-                <input type="text" placeholder="Numero de Telf">
-                <!-- Campo para la fecha de inicio del rango -->
-                <label for="fecha-inicio">LLegada:</label>
-                <input type="date" id="fecha-inicio" name="fecha-inicio">        
-                <!-- Campo para la fecha de finalización del rango --> 
-                <label for="fecha-fin">Salida:</label>
-                <input type="date" id="fecha-fin" name="fecha-fin">
-                <a href="#" id="reserva-link">Reserva</a>
+                <form action="/BIenvenido/preparativos/mundos/form-reserv.php" method="post" class="col">
+                    <input type="text" name="name" placeholder="Nombre">
+                    <input type="text" name="mail" placeholder="E-Mail">
+                    <input type="text" name="telefon" placeholder="Numero de Telf">
+                    <label for="fecha-inicio">LLegada:</label>
+                    <input type="date" id="fecha-inicio" name="FI">        
+                    <label for="fecha-fin">Salida:</label>
+                    <input type="date" id="fecha-fin" name="FF">
+                    <button class="btn-reserv">Reservar
+                        <span class="overlay"></span>
+                    </button>
+                </form>
             </div>
           </section>
           <!--footer-->
